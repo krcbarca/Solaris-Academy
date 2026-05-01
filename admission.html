@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission | Solaris Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="292x292"
+      href="LOGO/gold logo main.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admission.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="LOGO/gold logo main text.png" alt="Solaris Academy" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="admission.html">Admission</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://linkedin.com" class="nav-social"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://instagram.com" class="nav-social"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com" class="nav-social"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="index.html" class="nav-cta"
+          >Back to Home<i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- Admission Hero -->
+    <section class="admission-hero">
+      <div class="admission-hero-content">
+        <span class="admission-tag">Join Us</span>
+        <h1>Begin Your <em>Journey</em></h1>
+        <p>
+          Take the first step towards an transformative educational experience.
+          Fill out the form below and our team will contact you shortly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section class="admission-form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Student Application</h2>
+          <p>Please fill in all required information accurately</p>
+        </div>
+
+        <form class="admission-form" action="#" method="POST">
+          <!-- Personal Information -->
+          <div class="form-section">
+            <h3><i class="fa-solid fa-user"></i> Personal Information</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span>*</span></label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  placeholder="Enter first name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span>*</span></label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  placeholder="Enter last name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dob">Date of Birth <span>*</span></label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="prefer">Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="form-section">
+            <h3>
+              <i class="fa-solid fa-address-book"></i> Contact Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter email address"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Enter phone number"
+                />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Enter full address"
+              />
+            </div>
+          </div>
+
+          <!-- Academic Information -->
+          <div class="form-section">
+            <h3>
+              <i class="fa-solid fa-graduation-cap"></i> Academic Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="class">Class / Grade <span>*</span></label>
+                <select id="class" name="class" required>
+                  <option value="">Select class</option>
+                  <option value="kg">Kindergarten</option>
+                  <option value="1">Grade 1</option>
+                  <option value="2">Grade 2</option>
+                  <option value="3">Grade 3</option>
+                  <option value="4">Grade 4</option>
+                  <option value="5">Grade 5</option>
+                  <option value="6">Grade 6</option>
+                  <option value="7">Grade 7</option>
+                  <option value="8">Grade 8</option>
+                  <option value="9">Grade 9</option>
+                  <option value="10">Grade 10</option>
+                  <option value="11">Grade 11</option>
+                  <option value="12">Grade 12</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="school">Current School</label>
+                <input
+                  type="text"
+                  id="school"
+                  name="school"
+                  placeholder="Enter current school name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="interests">Areas of Interest</label>
+              <div class="checkbox-group">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="interests" value="science" />
+                  <span>Science & Technology</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="interests" value="arts" />
+                  <span>Arts & Creative</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="interests" value="sports" />
+                  <span>Sports & Athletics</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="interests" value="business" />
+                  <span>Business & Entrepreneurship</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="interests" value="languages" />
+                  <span>Languages & Communication</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parent/Guardian Information -->
+          <div class="form-section">
+            <h3>
+              <i class="fa-solid fa-users"></i> Parent / Guardian Information
+            </h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parentName"
+                  >Parent/Guardian Name <span>*</span></label
+                >
+                <input
+                  type="text"
+                  id="parentName"
+                  name="parentName"
+                  required
+                  placeholder="Enter parent/guardian name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="relationship">Relationship</label>
+                <select id="relationship" name="relationship">
+                  <option value="">Select relationship</option>
+                  <option value="father">Father</option>
+                  <option value="mother">Mother</option>
+                  <option value="guardian">Guardian</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parentPhone">Parent Phone <span>*</span></label>
+                <input
+                  type="tel"
+                  id="parentPhone"
+                  name="parentPhone"
+                  required
+                  placeholder="Enter parent phone number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="parentEmail">Parent Email</label>
+                <input
+                  type="email"
+                  id="parentEmail"
+                  name="parentEmail"
+                  placeholder="Enter parent email"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-section">
+            <h3>
+              <i class="fa-solid fa-circle-info"></i> Additional Information
+            </h3>
+
+            <div class="form-group full-width">
+              <label for="howDidYouHear">How did you hear about us?</label>
+              <select id="howDidYouHear" name="howDidYouHear">
+                <option value="">Select an option</option>
+                <option value="search">Search Engine</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend/Relative</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Additional Message or Questions</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Any additional information you'd like to share..."
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">
+              Submit Application <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-note">
+              By submitting this form, you agree to our terms and privacy
+              policy.
+            </p>
+          </div>
+        </form>
+
+        <!-- Success Message (hidden by default) -->
+        <div class="success-message" id="successMessage">
+          <div class="success-icon">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <h2>Application Submitted!</h2>
+          <p>Thank you for applying to Solaris Academy.</p>
+          <p class="success-detail">
+            We have received your application and our team will contact you
+            within 24-48 hours.
+          </p>
+          <button type="button" class="reset-btn" onclick="resetForm()">
+            Submit Another Application
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-glow-a"></div>
+      <div class="footer-glow-b"></div>
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-logo">Solaris Academy</p>
+          <p class="footer-tagline">
+            Redefining education through intelligent, adaptive, and immersive
+            learning systems built for the future.
+          </p>
+          <div class="footer-socials">
+            <a class="social-link" href="https://instagram.com"
+              ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+            <a class="social-link" href="https://linkedin.com"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            <a class="social-link" href="https://twitter.com"
+              ><i class="fa-brands fa-twitter"></i> X</a
+            >
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <div class="nav-col">
+            <p class="nav-heading">Pages</p>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="">Features</a>
+            <a class="nav-link" href="process.html">Process</a>
+            <a class="nav-link" href="admission.html">Admissions</a>
+          </div>
+
+          <div class="nav-col">
+            <p class="nav-heading">Connect</p>
+            <a class="nav-link" href="https://instagram.com">Instagram</a>
+            <a class="nav-link" href="https://linkedin.com">LinkedIn</a>
+            <a class="nav-link" href="https://twitter.com">X</a>
+          </div>
+
+          <div class="nav-col">
+            <p class="nav-heading">Contact</p>
+            <a class="nav-link" href="#">xxxxx@gmail.com</a>
+            <a class="nav-link" href="#">+1 8x0 0xx x0x0</a>
+            <a class="nav-link" href="#">Get in touch</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2040 Solaris Academy. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a class="legal-link" href="#">Privacy Policy</a>
+          <a class="legal-link" href="#">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Navigation scroll effect
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav.nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Form submission handler
+      document
+        .querySelector(".admission-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const submitBtn = document.querySelector(".submit-btn");
+          const originalText = submitBtn.innerHTML;
+
+          // Show loading state
+          submitBtn.innerHTML =
+            '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...';
+          submitBtn.disabled = true;
+
+          // Simulate form submission (2 second delay)
+          setTimeout(() => {
+            // Hide form and show success message
+            this.style.display = "none";
+            document.querySelector(".form-header").style.display = "none";
+            document.getElementById("successMessage").classList.add("active");
+
+            // Scroll to top of form container
+            document
+              .querySelector(".form-container")
+              .scrollIntoView({ behavior: "smooth" });
+
+            // Auto refresh after 5 seconds
+            setTimeout(() => {
+              submitBtn.innerHTML =
+                '<i class="fa-solid fa-rotate-right"></i> Refreshing...';
+              setTimeout(() => {
+                window.location.reload();
+              }, 1500);
+            }, 4000);
+          }, 2000);
+        });
+
+      // Reset form function
+      function resetForm() {
+        document.querySelector(".admission-form").reset();
+        document.querySelector(".admission-form").style.display = "block";
+        document.querySelector(".form-header").style.display = "block";
+        document.getElementById("successMessage").classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
